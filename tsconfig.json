@@ -1,6 +1,10 @@
 {
-    "compilerOptions": {
-      "lib": ["esnext"],
-      "experimentalDecorators": true
-    }
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "ES2019",
+    "lib": ["esnext"],
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "moduleResolution": "NodeNext"
   }
+}

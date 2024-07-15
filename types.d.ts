@@ -38,9 +38,9 @@ type UnifiedRange = Range | GoogleAppsScript.Spreadsheet.Range | GMRange
 interface Range {
     activate(): UnifiedRange;
     activateAsCurrentCell(): UnifiedRange;
-    setValue(value: string): UnifiedRange;
+    setValue(value: any): UnifiedRange;
     getValue(): any;
-    setValues(values: string[][]): UnifiedRange;
+    setValues(values: any[][]): UnifiedRange;
     getValues(): any[];
     setFontWeight(weight: string): UnifiedRange;
     setNumberFormat(format: string): UnifiedRange;
