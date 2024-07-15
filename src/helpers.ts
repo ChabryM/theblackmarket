@@ -1,9 +1,9 @@
-import { Spreadsheet, UnifiedRange, UnifiedSheet } from "../types";
+import { Spreadsheet, Range, Sheet, UnifiedSheet,UnifiedRange } from "../types";
 import { transaction } from "../src/transactions"
 import { user } from "../src/users"
 import { stock } from "../src/stocks"
-import Range from "gasmask/dist/SpreadsheetApp/Range";
-import Sheet from "gasmask/dist/SpreadsheetApp/Sheet";
+//import Range from "gasmask/dist/SpreadsheetApp/Range";
+//import Sheet from "gasmask/dist/SpreadsheetApp/Sheet";
 /**
  * Convert a sheet table into an array of Objects
  * @param {string} tableSheetName The name of the specified table/sheet
@@ -13,6 +13,7 @@ import Sheet from "gasmask/dist/SpreadsheetApp/Sheet";
 function getTable(spreadsheet:Spreadsheet, tableSheetName:string):Object[]{
     //add to objects the class that have to be supported
     const objects = { 'transactions' : transaction , 'users' : user, 'stocks' : stock}
+    
     let tableSheet: UnifiedSheet = spreadsheet.getSheetByName(tableSheetName);
     if (tableSheet === null) {return null};
 

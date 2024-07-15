@@ -1,9 +1,8 @@
-//import { Spreadsheet } from "../types";
+import { Spreadsheet } from "../types";
 import { getTable } from "./helpers";
 
 function test() {
-    //let ss = SpreadsheetApp.getActiveSpreadsheet();
-    const ss = undefined
+    let ss:Spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
     Logger.log(getTable(ss, 'transactions'))
     //Logger.log(getTable(ss,'transactions'));
     //Logger.log(getTable(ss,'users'));

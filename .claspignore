@@ -4,7 +4,7 @@
 # except the extensions…
 !appsscript.json
 # and our transpiled code
-!build/*.js
+!*.js
 
 # ignore even valid files if in…
 .git/**

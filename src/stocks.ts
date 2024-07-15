@@ -1,8 +1,6 @@
-import { SpreadsheetApp } from 'gasmask/dist/SpreadsheetApp';
 import Spreadsheet from "gasmask/dist/SpreadsheetApp/Spreadsheet";
 import { getTable } from "./helpers";
 
-let backoffice = SpreadsheetApp.getActiveSpreadsheet()
 
 class stock {
     user_id:string;
@@ -30,10 +28,10 @@ function updateStock(quantity){
     
 */
 
-
+/*
 function getStocks():Object[]{
     return getTable(backoffice,'stocks');
-    }
-
+}
+*/
 
 export{stock}
